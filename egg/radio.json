@@ -1,0 +1,30 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1",
+        "update_url": null
+    },
+    "exported_at": "2022-03-20T10:37:26+01:00",
+    "name": "Icecast-AutoDJ-Radio",
+    "author": "wegj1@hotmail.com",
+    "description": "Radio Streaming",
+    "features": null,
+    "images": [
+        "jensjeflensje\/icecast-autodj:latest"
+    ],
+    "startup": "icecast-autodj\/run.sh",
+    "config": {
+        "files": "{\r\n    \"ezstream.xml\": {\r\n        \"parser\": \"xml\",\r\n        \"find\": {\r\n            \"ezstream.servers.server.port\": \"{{server.build.default.port}}\"\r\n        }\r\n    },\r\n    \"icecast.xml\": {\r\n        \"parser\": \"xml\",\r\n        \"find\": {\r\n            \"icecast.listen-socket.port\": \"{{server.build.default.port}}\"\r\n        }\r\n    }\r\n}",
+        "startup": "{\r\n    \"done\": \" \"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\ncd \/mnt\/server\r\n\r\ngit clone https:\/\/github.com\/jensjeflensje\/icecast-autodj.git\r\ncd icecast-autodj\r\nchmod +x run.sh\r\nmv \/etc\/icecast2\/icecast.xml \/etc\/icecast2\/icecast.bcp.xml\r\ncp configs\/icecast.xml \/mnt\/server\/icecast.xml\r\nmkdir -p \/etc\/ezstream\r\n\r\ncp configs\/ezstream.v1.xml \/mnt\/server\/ezstream.xml\r\ntouch \/mnt\/server\/playlist.m3u\r\nln -s \/etc\/ezstream\/playlist.m3u \/mnt\/server\/playlist.m3u\r\nchown -R icecast2:icecast \/etc\/ezstream\r\n\r\nmkdir \/mnt\/server\/music\/\r\nmkdir \/mnt\/server\/log\/\r\nln -s \/mnt\/server\/log\/ \/var\/log\/icecast2\/",
+            "container": "jensjeflensje\/icecast-autodj:latest",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": []
+}
