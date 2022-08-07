@@ -2,22 +2,22 @@
 ![MTV](https://cdn.discordapp.com/attachments/989196322529742929/1005720622405517442/a_7ec88ef3cb8e2f25bf0aebea45706b58.gif)
 
 # What is this exactly?
-Welcome to another one of those things where zero does something just to keep his mind off of tottally not doing sometihng amazing.
+Welcome to another one of those things where zero does something just to keep his mind off of totally not doing something amazing.
 
 # Presenting
-I Present you a radio streaming service even your mother would ever watch if you have the right tracks hooked up. I didn't make the service i just made the egg to run the server and maybe the image itself so i can cry to sleep.
+I present you with a radio streaming service even your mother would never watch if you have the right tracks hooked up. I didn't make the service I just made the egg to run the server and maybe the image itself so I can cry to sleep.
 
 # What does it do
-Exactly what it says it can do, it plays a consistant radio stream to you, or your friends or even your uncle for cring out loud. you can shove your own music in the thing and it just works.
+Exactly what it says it can do, it plays a consistent radio stream to you, or your friends, or even your uncle for crying out loud. you can shove your music in the thing and it just works.
 
 # How do I use it?
 TBH
 
-# Can I advertise on it.
-Hell yea, make money on it. I'm not a huge finansial nerd.
+# Can I advertise on it?
+Hell yea, make money on it. I'm not a huge financial nerd.
 
 # Can NASA hear it
-Become popular first nerd. and on the double.
+Become a popular first nerd. and on the double.
 
 # MIT License
 Copyright (c) 2022 Banabyte Network
