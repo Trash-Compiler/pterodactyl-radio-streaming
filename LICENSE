@@ -21,39 +21,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 # For people who dont understand humor
-
 It means fuck you i'm not responsible.
-
-
-
-cd /tmp
-wget http://downloads.xiph.org/releases/icecast/icecast-2.4.4.tar.gz
-tar -zxf icecast-2.4.4.tar.gz
-ls -1
-cd icecast-2.4.4
-./configure
-make
-make install
-cd /usr/local/share/icecast/
-ls -1
-cd /tmp/
-ls
-mv icecast-2.4.4 /opt/ - zmiana katalogu
-cd /opt/icecast-2.4.4
-ls -1
-mkdir logs
-mv conf/icecast.xml.dist conf/icecast.xml
-cd conf/
-nano icecast.xml
- <logdir>/opt/icecast-server/logs</logdir>
-cd ..
-cd ..
-mv icecast-2.4.4/ icecast-server
-cd icecast-server
-adduser icecast
-cd ..
-chown -Rv icecast:icecast icecast-server/
-su icecast
-cd icecast-server
-ls -1
-icecast -c conf/icecast.xml
