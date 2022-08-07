@@ -1,5 +1,5 @@
 # Another one of zeros furiously creative adventures
-![MTV](https://cdn.discordapp.com/attachments/989196322529742929/1005720622405517442/a_7ec88ef3cb8e2f25bf0aebea45706b58.gif)
+![MTV](https://raw.githubusercontent.com/Banabyte/pterodactyl-radio-streaming/main/.github/mtv.gif)
 
 # What is this exactly?
 Welcome to another one of those things where zero does something just to keep his mind off of totally not doing something amazing.
